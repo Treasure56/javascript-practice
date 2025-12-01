@@ -9,7 +9,7 @@ const data = {
   isAdult: false,
 };
 
-console.log(name);
+console.log(name);  
 console.log(num);
 console.log(countries);
 console.log(isLoading);
@@ -32,7 +32,7 @@ let result = {
 
 //  reasign the let variables
 
-age = 13;
+age = 13; // "number"
 message = "Something went wrong";
 courses = ["nigeria", "japan"];
 isAdult = true;
@@ -44,6 +44,29 @@ result = {
 
 console.log(age);
 console.log(message);
-console.log(courses);
+console.log(typeof courses);
 console.log(isAdult);
 console.log(result);
+
+
+
+const numbers = ["1", "2", "3", "4"];
+const date = new Date();
+
+console.log(numbers instanceof Array); 
+console.log(numbers instanceof Object);
+console.log(date instanceof Date); 
+
+const x = null;
+console.log(typeof x)
+
+const person = { "full name": 'Tee', birthday: '10 july 2020', "age": '5' }
+console.log(person["age"]);
+
+const _numbers = {
+  0: "1",
+  1: "2",
+  2: "3",
+  3: "4",
+};
+console.log(_numbers[0]);
