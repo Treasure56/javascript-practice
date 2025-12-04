@@ -99,8 +99,9 @@ const phone = "07039418955"
 console.log(phone.split("070"));
 
 const phrase = "Hello, how are you?";
-console.log(phrase.split(" "));
+// console.log(phrase.split(" "));
 
+console.log(phrase.split(" ", 2))
 // trim method
 const str3 = " Javascript is awesome!   ";
 console.log(str3.trim());
@@ -114,3 +115,8 @@ const includeStr = "JavaScript is fun";
 console.log(includeStr.includes("fact"));
 const includeStr2 = "JavaScript is fun";
 console.log(includeStr.includes("fun"));
+
+
+const helloStr = "Hello World!";
+
+console.log(helloStr.indexOf("Wor")); // Output: 7
