@@ -18,13 +18,13 @@ console.log(backtickStr);
 
 // A single character can not be changed by accessing its index
 
-let str = "hello";
-str[0] = "H"; // this will not change the string
-console.log(str); // Output: hello
+// let str = "hello";
+// str[0] = "H"; // this will not change the string
+// console.log(str); // Output: hello
 
 // To change a string, we need to create a new string
-let newStr = "H" + str.slice(1);
-console.log(newStr); // Output: Hello
+// let newStr = "H" + str.slice(1);
+// console.log(newStr); // Output: Hello
 
 
 //  Each character in a string has a corresponding index starting from 0
@@ -120,3 +120,38 @@ console.log(includeStr.includes("fun"));
 const helloStr = "Hello World!";
 
 console.log(helloStr.indexOf("Wor")); // Output: 7
+
+
+const tee = "heyy heyy Good morning";
+console.log(tee.replace("heyy", "Everyone"));
+
+const testPhrase = "Hello, how are you?";
+console.log(testPhrase.split(" ", 2));
+
+ // str.substring(startIndex, endIndex)
+  const substringStr = "JavaScript is awesome";
+  console.log(substringStr.substring(0, 10)); // Output: JavaScript
+
+  const word = "Hello World!";
+  console.log(word.slice(1, 4)); // Output: ell
+  console.log(word.substring(1, 4)); // Output: ell
+
+  const greet = "Hello, World!";
+  console.log(greet.slice(-6, -1)); // Output: World
+  console.log(greet.substring(-6, -1)); // Output: "" (empty string)
+
+  const heyy = "treasure";
+  console.log(heyy.slice(2, 2)); 
+
+  "hello".substring(3, 1) 
+  const hello = "hello world";
+  console.log(hello.substring(3, 1));
+  "hello world".slice(-5)
+  const helloWorld = "hello world";
+  console.log(helloWorld.slice(-5)); // Output: world
+  const programming = "Programming";
+  console.log(programming.slice(4, 7));
+  
+
+
+

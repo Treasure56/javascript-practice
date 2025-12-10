@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <main>
+    <section class="p-6 max-w-lg mx-auto">
+      <h1 class="text-2xl font-bold mb-4">Bad Words Detector</h1>
+      <form id="badWordsForm" class="space-y-4">
+        <div>
+          <label for="inputText" class="block text-sm font-medium text-gray-700">Enter Text</label>
+          <textarea id="inputText" name="inputText" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required></textarea>
+        </div>
+       
+        <button type="submit" id="checkButton" class="w-full bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600">Check for Bad Words</button>
+
+        <div>
+          <div id="result" class="mt-2 p-4 border border-gray-300 rounded-md bg-gray-50"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+  
+</body>
+<script src="badWordsDictetor.js"></script>
+</html>
