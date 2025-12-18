@@ -131,7 +131,7 @@ console.log(testPhrase.split(" ", 2));
  // str.substring(startIndex, endIndex)
   const substringStr = "JavaScript is awesome";
   console.log(substringStr.substring(0, 10)); // Output: JavaScript
-
+// slice is for extracting a part of a string and returns the extracted part in a new string
   const word = "Hello World!";
   console.log(word.slice(1, 4)); // Output: ell
   console.log(word.substring(1, 4)); // Output: ell
@@ -151,6 +151,39 @@ console.log(testPhrase.split(" ", 2));
   console.log(helloWorld.slice(-5)); // Output: world
   const programming = "Programming";
   console.log(programming.slice(4, 7));
+
+
+  const [] = [1];
+  console.log([]) 
+
+  const const = 1;
+  console.log(const)
+
+  const name = "my name is treasure";
+  console.log(name.split("")); // splits each character
+
+  const item = Number("name")
+  console.log(item) 
+
+  // how can i determine if item is a valid number or not
+
+  //return type of Number.isNaN(item); 
+
+  // two ways ways variables store data
+  // by value and by reference
+
+  cons sentence = "i ate rice today";
+  // array every word as an element
+  console.log(sentence.split(" ", 2));  // output: ["i", "ate"]  // splits into two elements only
+
+  
+  
+
+
+
+
+
+
   
 
 
