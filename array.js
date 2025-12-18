@@ -69,3 +69,26 @@ console.log(b);
   animalss.unshift("elephant"); // adds to the start
   console.log(animalss); // Output: [ "elephant", "cat", "dog", ]
 
+  // deleting from end
+  const animalsss = ["cat", "dog", "elephant"];
+  animalsss.pop(); // removes from the end
+  console.log(animalsss); // Output: [ "cat", "dog" ]
+
+  // deleting from start
+  const animalssss = ["cat", "dog", "elephant"];
+  animalssss.shift(); // removes from the start
+  console.log(animalssss); // Output: [ "dog", "elephant" ]
+
+  // removing element at index 1
+  animals.splice(1, 1); // removes 1 element at index 1
+  console.log(animals); // Output: ["cat", "elephant"]
+
+
+  // Update element
+  animals[0] = "lion"; // updates element at index 0
+  console.log(animals); // Output: ["lion", "elephant"]
+
+  // using splice to update element
+  animals.splice(1, 1, "tiger"); // updates 1 element at index 1
+  console.log(animals); // Output: ["lion", "tiger"]
+
