@@ -176,7 +176,25 @@ console.log(testPhrase.split(" ", 2));
   // array every word as an element
   console.log(sentence.split(" ", 2));  // output: ["i", "ate"]  // splits into two elements only
 
-  
+  // types in javascript
+  // primitive types: string, number, boolean, null, undefined, symbol, bigint
+  // reference types: array, object, function
+
+  // typeof(null) // object
+  // difference between typeof and instanceof
+
+  // typeof checks the type of a variable
+  // instanceof checks if an object is an instance of a specific class or constructor function
+  eg :
+
+  const arr1 = [1, 2, 3];
+  console.log(arr1 instanceof Object); // true because array is an object
+  console.log(arr1 instanceof Array); // true because arr1 is an instance of Array
+  alert("Your message contains inappropriate language. Please revise your message before sending.");
+
+// to check type null
+if (null )
+  // null is what type of object: 
   
 
 
