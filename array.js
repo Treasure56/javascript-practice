@@ -259,6 +259,67 @@ console.log(changeJohnsAge);
 console.log(isAlice);
 
 
+// reduce method: is used to turn an array into a sigle value (number, string, object, etc)
+
+// sum of all ages of users
+
+const totalUserAges = users.reduce((v, i ) => v + i.age, 0);
+console.log("total ages of users:", totalUserAges);
+
+//
+const num = [3, 6, 9];
+const total = num.reduce((acc, curr) => acc + curr, 0);
+console.log(total); // Output: 18
+
+const totalProducts = num.reduce((acc, n) => acc * n, 1);
+console.log(totalProducts); // Output: 162
+
+const nums2 = [5, 10, 15];
+const noInitialValue = nums2.reduce((acc, n) => acc + n);
+console.log(noInitialValue); // Output: 30
+
+const fruit = ["apple", "banana", "apple", "orange", "banana"];
+const fruitCount = fruit.reduce((acc, curr) => {
+ acc[curr] = (acc[curr] || 0) + 1;
+ return acc;
+}, {});
+console.log(fruitCount); // Output: {apple: 2, banana: 2, orange: 1   
+
+// to get the highest score
+const scores = [45, 72, 88, 60];
+const highestScore = scores.reduce((max, score) =>{
+  return score > max ? score : max;
+})
+console.log(highestScore); // Output: 88
+
+// tuning array into string
+const words = ["I", "love", "JavaScript"];
+const sentence = words.reduce((acc, word) => acc + " " + word);
+console.log(sentence); // Output: "I love JavaScript"
+
+// using reduce to retun an array
+const numbers3 = [1, 2, 3, 4];
+const dounledNumbers = numbers3.reduce((acc, num) => {
+  acc.push(num * 2);
+  return acc;
+}, []);
+console.log(dounledNumbers); // Output: [2, 4, 6, 8]
+
+const scoress = [30, 55, 80, 40, 90];
+const higerScores = scoress.reduce((acc, score) => {
+  if(score > 50) {
+    acc.push(score +5);
+  }
+  return acc;
+}, []);
+console.log(higerScores); // Output: [60, 85, 95]
+
+// [].reduce((acc, item) => acc + item);
+// console.log([]);  // this will throw an error because reduce method cannot be called on an empty array without an initial value
+
+
+
+
 
 
 
