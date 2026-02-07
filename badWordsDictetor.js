@@ -55,7 +55,7 @@ const badwords = [
   "fucking damn your father",
   "fucking damn your family",
   "fucking damn your friends",
-  "fucking damn your enemies",
+  "fucking damn your enemies ",
   "fucking damn your life",
   "fucking damn your death",
   "fucking damn your everything",
